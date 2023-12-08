@@ -1,13 +1,14 @@
 # QR Code Generator
 
-This QR Code Generator is a simple yet powerful Python tool that creates QR codes with the option to customize the color, add a logo, and include artistic text. Designed to be easy to use and modify, it's perfect for generating QR codes for personal or professional use.
+This QR Code Generator is an advanced, yet user-friendly Python tool that allows for the creation of customized QR codes. It comes with enhanced capabilities, including color customization, logo insertion, and the addition of styled text. It's ideal for both personal and professional QR code generation needs.
 
 ## Features
 
-- Generate QR codes for any URL.
-- Customize QR code color and background.
-- Add a logo to the center of the QR code.
-- Include custom text beneath the QR code with artistic effects.
+- Generate customizable QR codes for any URL.
+- Options to alter QR code color and background.
+- Incorporate a logo within the QR code.
+- Add styled text beneath the QR code for additional information or branding.
+- Enhanced customization for logo size and text font size.
 
 ## Requirements
 
@@ -17,7 +18,7 @@ This QR Code Generator is a simple yet powerful Python tool that creates QR code
 
 ## Installation
 
-To run this script, you will need Python installed on your system. If you don't have the required libraries (`Pillow` and `qrcode`), install them using pip:
+Ensure Python is installed on your system. Install the required libraries (`Pillow` and `qrcode`) using pip if you haven't already:
 
 ```bash
 pip install pillow qrcode
@@ -25,38 +26,41 @@ pip install pillow qrcode
 
 ## Usage
 
-To generate a QR code, simply execute the script with Python and the generated QR code will be saved as an image file:
+Execute the script with Python to generate a QR code. The QR code will be saved as an image file:
 
 ```bash
 python generate_qr.py
 ```
 
-The default settings are:
+Default settings:
 
 - URL: `https://ritwikdas.gitlab.io`
-- Logo: `favicon-2.png` (Place your logo in the script's directory or specify the path)
+- Logo: `favicon-2.png` (place in the script's directory or specify the path)
 - Text: "RITWIK DAS"
 - QR Color: Navy
 - Background: White
+- Logo Size: 100 (pixels)
+- Text Font Size: 35 (points)
 
-You can customize these settings directly in the script.
+These settings can be customized in the script.
 
 ## Customization
 
-To customize your QR code, modify the parameters in the `generate_qr` function call at the bottom of the script:
+Modify the parameters in the `generate_qr` function call for personalization:
 
-- `url`: The URL that the QR code will point to.
-- `logo_path`: The path to the logo image you want to embed in the QR code.
-- `text`: The text you want to display beneath the QR code.
-- `logo_size`: The size of the logo within the QR code.
-- `text_font_size`: The font size of the text beneath the QR code.
-- `qr_color`: The color of the QR code.
-- `background`: The background color of the QR code.
+- `url`: URL for the QR code.
+- `name`: Naming convention for the QR code image file.
+- `logo_path`: Path to the logo image.
+- `text`: Custom text below the QR code.
+- `logo_size`: Size of the embedded logo.
+- `text_font_size`: Font size of the text.
+- `qr_color`: Color of the QR code.
+- `background`: Background color of the QR code.
 
 ## Contributing
 
-Contributions are welcome! For major changes, please open an issue first to discuss what you would like to change.
+Contributions are welcome! Please open an issue first to discuss significant changes.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source, available under the [MIT License](LICENSE).

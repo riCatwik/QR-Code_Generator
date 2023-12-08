@@ -16,8 +16,8 @@ from PIL import Image, ImageDraw, ImageFont
 
 
 def generate_qr(
-    name,
     url,
+    name="website",
     logo_path=None,
     text=None,
     logo_size=80,
@@ -77,11 +77,11 @@ def generate_qr(
 ## ======================================================== ##
 
 
-## Naming convention of the website URL
-name = "ritwikdas.gitlab.io"
-
 ## Define the full website URL (will be redirected to this link)
 url = "https://ritwikdas.gitlab.io"
+
+## Naming convention of the website URL
+name = "ritwikdas.gitlab.io"
 
 ## Path to logo image (optional)
 logo_path = "favicon-2.png"
@@ -92,8 +92,8 @@ text = "RITWIK DAS"
 ## Call the generate_qr function with the given URL, logo path, and text
 ## You can now specify the logo size, text font size, QR color, and background color as needed
 generate_qr(
-    name,
     url,
+    name,
     logo_path=logo_path,
     text=text,
     logo_size=100,
